@@ -141,6 +141,9 @@ article input.cancel:hover{
     article.plan .year p {
         margin-left: 45px;
     } 
+    img.fundo{
+        display:none;
+    }
 }
 
 @media screen and (max-width: 280px){
