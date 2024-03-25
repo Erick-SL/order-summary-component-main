@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Red Hat Display", sans-serif;;
+}
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e8ff;
+}
+
+img.fundo{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+section{
+    box-shadow: 0px 0px 14px #7280a72f;
+    border-radius: 15px;
+    width: 450px;
+    background-color: white;
+    text-align: center;
+}
+
+#box{
+    width: 100%;
+}
+
+#box img{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+}
+
+article{
+    margin: 35px;
+}
+
+article.info h2{
+    margin: 15px 0;
+}
+article.info h2, .year p{
+    font-weight: 700;
+    color: #1f2f56;
+}
+
+article.info p.color{
+    font-size: 18px;
+}
+
+p.color{
+    color: #7280a7;
+    font-weight: 500;
+}
+
+article.plan{
+    background-color: #f5f7ff;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+article.plan .year{
+    background-image: url(./images/icon-music.svg);
+    background-repeat: no-repeat;
+    background-size: 40px;
+}
+
+article.plan .year p{
+    margin-left: 60px;
+}
+
+article.plan a{
+    line-height: 40px;
+    color: #3829e0;
+    font-weight: 700;
+}
+
+article.plan a:hover{
+    color: #4a3af8d0;
+    text-decoration: none;
+}
+
+article input{
+    border: none;
+    width: 100%;
+    padding: 15px;
+    margin: 5px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+article input.pay{
+    border-radius: 10px;
+    background-color: #3829e0;
+    color: white;
+    border-bottom: 1px;
+    box-shadow: 0px 2px 20px #3829e07e;
+    cursor: pointer;
+}
+
+article input.pay:hover{
+    background-color: #4a3af8d0;
+}
+
+article input.cancel{
+    background-color: transparent;
+    color: #7280a7;
+}
+
+article input.cancel:hover{
+    color:#1f2f56;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 600px){ 
+   section{
+        width: 80%;
+   }
+   body, p{
+    font-size: 13px !important;
+    }
+}
+
+@media screen and (max-width: 380px){
+    article.plan {
+        padding: 0px;
+        margin-left: 5px;
+    }
+
+    article.plan .year p {
+        margin-left: 45px;
+    } 
+}
+
+@media screen and (max-width: 280px){
+    img.fundo{
+        display: none;
+    }
+    body, p{
+        font-size: 13px !important;
+    }
+    article.plan {
+        margin: 0 ;
+        display: block; 
+    }
+    article.plan .year{
+        background-image: none;
+    }
+    article.plan .year p {
+        margin-left: 0px;
+    }
+    article input{
+        font-size: 13px;
+    }
+}
